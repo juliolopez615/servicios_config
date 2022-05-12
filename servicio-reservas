@@ -1,10 +1,12 @@
 server:
   port: 8002
+  servlet:
+    context-path: /reserva
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: root
-    url: jdbc:mysql://localhost:3307/viajes?serverTimezone=UTC
+    password: ''
+    url: jdbc:mysql://localhost:3306/viajes?serverTimezone=UTC
     username: root
   jpa:
     hibernate:
